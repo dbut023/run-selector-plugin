@@ -161,7 +161,7 @@ public class SelectRunStepTest {
      *  mvn clean install -Djenkins.version=1.642.1 -Djava.level=7 -Dworkflow-step-api.version=2.3 -Dworkflow-support.version=2.2 -Dworkflow-job.version=2.4 -Dworkflow-basic-steps.version=2.1 -Dworkflow-cps.version=2.10
      * </pre>
      */
-    private static void assumeSymbolDependencies() {
+    public static void assumeSymbolDependencies() {
         assumePropertyIsGreaterThanOrEqualTo(System.getProperty("jenkins.version"), "1.642.1");
         assumePropertyIsGreaterThanOrEqualTo(System.getProperty("java.level"), "7");
         assumePropertyIsGreaterThanOrEqualTo(System.getProperty("workflow-step-api.version"), "2.3");
